@@ -11,7 +11,7 @@ class Usuario extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    protected $table = 'usuarios'; // Nombre exacto de la tabla
+    protected $table = 'usuarios'; 
 
     protected $fillable = [
         'nombre',
@@ -20,7 +20,7 @@ class Usuario extends Authenticatable
         'rol',
     ];
 
-    // Ocultar el password al devolver el modelo en JSON
+    
     protected $hidden = [
         'password',
     ];
